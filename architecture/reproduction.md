@@ -25,10 +25,10 @@ The following resources must be available before starting:
 ### Security Group Setup
 
 8. Create a Security Group for the load balancers
-9. Allow inbound traffic: TCP 80 and TCP 443
+9. Allow inbound traffic: TCP 80 and TCP 443 Source Anywhere-IPv4
 10. Allow outbound traffic: All Traffic
 11. Create a Security Group for the instances
-12. Allow inbound traffic: TCP 22 and TCP 80
+12. Allow inbound traffic: TCP 80 Source ALB Security Group ID
 13. Allow outbound traffic: All Traffic
 
 ### DNS Setup
@@ -82,14 +82,18 @@ The following resources must be available before starting:
 45. Create the production DNS record in Route 53
 46. Production Subdomain -> Production ALB
 47. Record type A
-48. Create the staging DNS record in Route 53
-49. Staging Subdomain -> Staging ALB
-50. Record type A
+48. Alias On
+49. Route traffic to Alias to Application and Classic Load Balancer
+50. Create the staging DNS record in Route 53
+51. Staging Subdomain -> Staging ALB
+52. Record type A
+53. Alias On
+54. Route traffic to Alias to Application and Classic Load Balancer
 
 ### Validation
 
-51. Access production subdomain in browser
-52. Access staging subdomain in browser
+55. Access production subdomain in browser
+56. Access staging subdomain in browser
 
 ## Failure Injection
 
