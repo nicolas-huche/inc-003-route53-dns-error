@@ -1,0 +1,3 @@
+nicolas@inc-003 % ./scripts/diagnose/inspect_record.sh prod.huche.com.br
+[INFO] 2026-06-06T19:44:13Z Inspecting Route 53 record: prod.huche.com.br.
+[ERROR] 2026-06-06T19:44:17Z Route 53 Misconfiguration confirmed: record points to the wrong ALB

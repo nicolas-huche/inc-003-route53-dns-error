@@ -1,0 +1,5 @@
+nicolas@ inc-003 % ./scripts/remediation/fix_record.sh prod.huche.com.br
+[INFO] 2026-06-06T19:44:47Z Restoring Route 53 record for prod.huche.com.br.
+[INFO] 2026-06-06T19:44:52Z Route 53 record restored
+[INFO] 2026-06-06T19:44:52Z Record: prod.huche.com.br.
+[INFO] 2026-06-06T19:44:52Z Target ALB: inc-003-prod-alb
