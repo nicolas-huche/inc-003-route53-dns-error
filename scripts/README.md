@@ -9,6 +9,7 @@ This directory contains simple diagnostic utilities used throughout the INC-003 
 | `inspect_record.sh`      | Verify whether the Route 53 record points to the expected production ALB                                       |
 | `probe_certificate.sh`   | Validate the certificate currently presented by the endpoint                                                   |
 | `inject_failure.sh`      | Intentionally redirects the production Route 53 record to the staging environment                              |
+| `fix_record.sh`          | Restore the Route 53 record to the expected production ALB                                                     |
 
 ## Dependencies
 
@@ -57,3 +58,13 @@ Inject the simulated DNS failure:
 ```
 
 This updates the production Route 53 record to point to the same endpoint as the staging environment.
+
+### Remediation
+
+Restore the Route 53 record:
+
+```bash
+./scripts/remediation/fix_record.sh HOSTNAME
+```
+
+This updates the Route 53 alias record to point back to the expected production Application Load Balancer.
