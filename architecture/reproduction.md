@@ -97,11 +97,15 @@ The following resources must be available before starting:
 
 ## Failure Injection
 
-Run (failure injection script)
+Run [inject_failure.sh](../scripts/chaos/inject_failure.sh)
 
 ## Investigation and Recovery
 
-See (runbook)
+See [certificate-error.md](../runbook/certificate-error.md)
+
+## Limitations
+
+- The production Application Load Balancer name must contain the production subdomain name. This convention is used by the diagnostic and remediation scripts to automatically identify the expected load balancer.
 
 ## Teardown
 

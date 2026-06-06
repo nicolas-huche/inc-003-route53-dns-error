@@ -13,7 +13,7 @@ cat > /usr/share/nginx/html/index.html <<'EOF'
 <body>
     <h1>PRODUCTION</h1>
     <p>Environment: PROD</p>
-    <p>Hostname: portal.huche.com.br</p>
+    <p>Hostname: prod.huche.com.br</p>
     <p>Project: INC-003</p>
 </body>
 </html>
