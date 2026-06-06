@@ -62,6 +62,7 @@ Verify whether the DNS record points to the expected production Application Load
 ### Remediation
 
 Restore the DNS record so that the production hostname points to the correct production Application Load Balancer.
+Run [fix_record.sh](../scripts/REAME.md)
 
 ## Validation
 
